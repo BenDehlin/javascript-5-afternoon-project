@@ -164,7 +164,7 @@ class Machine{
   }
 
   reboot(){
-    return function (){
+    return () => {
       this.wear_and_tear_count -= 10
       this.needs_reboot = false
     }
